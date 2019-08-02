@@ -1,0 +1,19 @@
+{
+  "name": "poc-nightwatch",
+  "version": "1.0.0",
+  "description": "Using NightWatch to test WebChat 2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chromedriver": "^75.1.0",
+    "geckodriver": "^1.16.2",
+    "mocha": "^6.1.4",
+    "nightwatch": "^1.1.13",
+    "selenium-server": "^3.141.59"
+  }
+}
