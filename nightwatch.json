@@ -15,7 +15,7 @@
         "silent": true,
         "disable_colors": false,
         "screenshots": {
-            "enabled": true,
+            "enabled": false,
             "on_failure": true,
             "on_error": false,
             "path": "tests/output/screenshots"
