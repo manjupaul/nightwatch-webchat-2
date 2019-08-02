@@ -1,5 +1,10 @@
 const URL = process.env.BASE_URL
 module.exports = {
+
+  after: function(browser) {
+    browser.end();
+  },
+  
   'Devo conseguir acessar a url do webchat': function(browser) {
     browser
       .url(URL)
@@ -62,6 +67,5 @@ module.exports = {
       .pause(1000)
       .click('.content-header .content-header-image')
       .pause(1000)
-      .end()
   }
 }

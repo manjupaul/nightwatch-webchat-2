@@ -1,5 +1,10 @@
 const URL = process.env.URL_QUESTION
 module.exports = {
+
+  after: function(browser) {
+    browser.end();
+  },
+  
   'Deve abrir a URL com o fluxo de questões': function(browser) {
     browser
       .url(URL)
@@ -31,8 +36,5 @@ module.exports = {
       .waitForElementNotPresent('.typing')
       .assert.containsText('.card-message-robot:nth-child(8) > .card-message-balloon > div', 'pode falar a verdade vc ja deu a bunda sim kkkkk')
       .assert.containsText('.card-message-robot:nth-child(9) > .card-message-balloon > div', 'vlw !!!!')
-  },
-  'Deve finalizar o teste': function(browser) {
-    browser.end();
   }
 }

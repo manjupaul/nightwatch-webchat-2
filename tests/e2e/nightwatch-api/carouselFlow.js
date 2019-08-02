@@ -1,5 +1,10 @@
 const URL = process.env.URL_CAROUSEL;
 module.exports = {
+
+  after: function(browser) {
+    browser.end();
+  },
+
   'Deve abrir a URL com três mensagens do bot': function(browser) {
     browser
       .url(URL)
@@ -14,8 +19,5 @@ module.exports = {
     browser
       .waitForElementVisible('.card-message-robot')
       .assert.visible('.image-card-carousel-wrapper:nth-child(3) > .image-card-carousel > img:nth-child(2)')
-  },
-  'Deve finalizar o teste': function(browser) {
-    browser.end();
   }
 }
