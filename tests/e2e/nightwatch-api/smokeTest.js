@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000'
+const URL = process.env.BASE_URL
 module.exports = {
   'Devo conseguir acessar a url do webchat': function(browser) {
     browser

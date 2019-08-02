@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/?flowId=5d2d0063b7abd2632e1f1932'
+const URL = process.env.URL_QUESTION
 module.exports = {
   'Deve abrir a URL com o fluxo de questões': function(browser) {
     browser

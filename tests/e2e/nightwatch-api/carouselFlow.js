@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000/?flowId=5d2a3d79ea2f873566adcb54';
+const URL = process.env.URL_CAROUSEL;
 module.exports = {
   'Deve abrir a URL com três mensagens do bot': function(browser) {
     browser
