@@ -1,3 +1,5 @@
+const headless = process.env.IS_HEADLESS
+
 module.exports = {
   "src_folders" : ["./tests/e2e/nightwatch"],
 
@@ -59,7 +61,11 @@ module.exports = {
         },
         "desiredCapabilities" : {
             "browserName" : "chrome",
-            "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}
+            "chromeOptions": {
+                "args": [
+                    headless ? "--headless" : ""
+                ]
+            }
         }
     },
 
