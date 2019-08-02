@@ -1,4 +1,4 @@
-{
+module.exports = {
   "src_folders" : ["./tests/e2e/nightwatch"],
 
   "disable_colors": false,
@@ -41,8 +41,7 @@
             "acceptInsecureCerts" : true,
             "moz:firefoxOptions": {
                 "args": [
-                    "-headless",
-                    "-safe-mode"
+                    "-headless"
                 ]
             }
         }
