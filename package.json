@@ -4,7 +4,9 @@
   "description": "Using NightWatch to test WebChat 2.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "chrome": "nightwatch ./tests/e2e/nightwatch-api --env chrome",
+    "firefox": "nightwatch ./tests/e2e/nightwatch-api --env firefox",
+    "mocha": "nightwatch ./tests/e2e/mocha --env mocha"
   },
   "author": "",
   "license": "ISC",
