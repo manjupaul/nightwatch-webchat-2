@@ -3,6 +3,8 @@ node_modules/
 .env
 /tests/output/
 /tests_output
+chromedriver.log
+selenium-server.log
 
 # Editor directories and files
 .idea
